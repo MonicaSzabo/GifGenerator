@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	var gifArray = ["happy", "sad", "ambivalent", "angry", "surprised", "despondent", "tired"];
+	var gifArray = ["happy", "sad", "angry", "surprised", "despondent", "ambivalent", "tired",
+		"lonely", "scared", "loving", "excited"];
 
 
 	function buttonCreator() {
