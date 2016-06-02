@@ -25,10 +25,11 @@ h1 {
 }
 
 #gifPlace {
-	background: rgb(105, 105, 105);
-	background: rgba(105, 105, 105, .5);
+	background: rgb(89, 155, 179);
+	background: rgba(89, 155, 179, .5);
 }
 
+/*Made with http://www.bestcssbuttongenerator.com/*/
 button {
 	-moz-box-shadow: 7px 7px 14px -5px #276873;
 	-webkit-box-shadow: 7px 7px 14px -5px #276873;

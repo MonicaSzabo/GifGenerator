@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	var gifArray = ["happy", "sad", "angry", "surprised", "despondent", "ambivalent", "tired",
-		"lonely", "scared", "loving", "excited"];
+	var gifArray = ["happy", "sad", "angry", "surprised", "despondent", "bored", "tired",
+		"lonely", "scared", "cute", "excited"];
 
 
 	function buttonCreator() {
@@ -13,8 +13,6 @@ $(document).ready(function() {
 
 	function onClickEmotions() {
 		var emo = $(this).attr('data-emotion');
-		//var queryURL = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=" + emo + "&limit=10";
-
 		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + emo + "&api_key=dc6zaTOxFJmzC&limit=10";
 
 		$('#gifPlace').empty();
@@ -24,7 +22,8 @@ $(document).ready(function() {
 
             for (var i = 0; i < results.length; i++) {
                 var gifDiv = $('<div class="gif">')
-                var ratingText = $('<p>').text("Rating: " + results[i].rating);
+                var rating = results[i].rating.toUpperCase();
+                var ratingText = $('<p>').text("Rating: " + rating);
                 var emoImage = $('<img src=' + results[i].images.fixed_height_still.url + ' data-still=' +
                 	results[i].images.fixed_height_still.url + ' data-animate=' +
                 	results[i].images.fixed_height.url + ' data-state="still" class="emoImage">');
