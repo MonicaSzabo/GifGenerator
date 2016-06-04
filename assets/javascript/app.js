@@ -53,6 +53,7 @@ $(document).ready(function() {
                 //Appends each gif to gifPlace
                 $('#gifPlace').append(gifDiv);
             }
+            
             //Due to user feedback, added a description of what to do
             $('#gifPlace').append('<br><div class="text-center">[Click the images to animate them]</div>');
 		});
